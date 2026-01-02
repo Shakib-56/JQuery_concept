@@ -65,3 +65,42 @@ $("#p1").toggleClass("style2");
 // in javascript we used document.querySelector("p").classList.contains("style1");
 let hasClass = $("#p1").hasClass("style1");
 console.log("Does paragraph have class 'style1'? " + hasClass);
+
+// Event Handling
+// in javascript we used document.querySelector("button").addEventListener("click", function() {...});
+
+// document.querySelector("#btn1").addEventListener("click", function () {
+//   alert("Button clicked! This is handled using JavaScript.");
+//   document.querySelector("h1").innerHTML = "Button Clicked!";
+// });
+
+// using JQuery to handle button click event
+// $("#btn1").click(function () {
+//   alert("Button clicked! This is handled using JQuery.");
+//   $("h1").text("Button Clicked!");
+// });
+// $("#btn1").click(() => {
+//   alert("Button clicked! This is handled using JQuery.");
+//   $("h1").toggleClass("style2");
+// });
+
+/*
+let totalButtons = document.querySelectorAll(".myButton").length;
+for (let i = 0; i < totalButtons; i++) {
+  document
+    .querySelectorAll(".myButton")
+    [i].addEventListener("click", function () {
+      let text = this.innerHTML;
+      document.querySelector("h1").innerHTML = "You clicked " + text;
+    });
+}
+*/
+// $(".myButton").click(function () {
+//   let value = this.innerHTML;
+//   $("h1").text("You clicked " + value);
+// });
+
+$(".myButton").on("mouseover", function () {
+  let value = this.innerHTML;
+  $("h1").text("You clicked " + value);
+});
