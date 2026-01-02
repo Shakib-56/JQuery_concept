@@ -19,6 +19,7 @@
 
 // $("#p1").after(mypara1.clone());
 
+/*
 // Attribute Manipulation
 
 //in js we used document.querySelector("a").getAttribute("href");
@@ -31,3 +32,26 @@ $("a").attr("href", "https://www.example.com");
 // in js we used document.querySelector("a").removeAttribute("target");
 $("a").removeAttr("target");
 console.log("The target attribute is removed.");
+*/
+
+// CSS Manipulation
+/*
+$("p").css("color", "white");
+$("p").css("font-size", "20px");
+$("p").css("background-color", "blue");
+$("p").css("padding", "10px");
+$("p").css("border", "2px solid black");
+
+// multiple css properties at once
+$("p").css({
+  "text-align": "center",
+  "border-radius": "10px",
+  "box-shadow": "2px 2px 5px grey",
+});
+*/
+// adding a class to the paragraph
+// in javascript we used document.querySelector("p").classList.add("style1");
+$("#p1").addClass("style1");
+// multiple classes can be added at once
+// in javascript we used document.querySelector("p").classList.add("style2", "style3");
+$("#p1").addClass("style1 style2"); //here just use space to separate multiple classes
