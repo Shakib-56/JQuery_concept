@@ -18,3 +18,16 @@
 // // create a new paragraph using JQuery and add after previous paragraph
 
 // $("#p1").after(mypara1.clone());
+
+// Attribute Manipulation
+
+//in js we used document.querySelector("a").getAttribute("href");
+let attr = $("a").attr("href");
+console.log("The href attribute of the link is: " + attr);
+// in js we used document.querySelector("a").setAttribute("href", "https://www.example.com");
+$("a").attr("href", "https://www.example.com");
+
+// remove attribute
+// in js we used document.querySelector("a").removeAttribute("target");
+$("a").removeAttr("target");
+console.log("The target attribute is removed.");
