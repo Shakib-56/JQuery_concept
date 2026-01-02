@@ -55,3 +55,13 @@ $("#p1").addClass("style1");
 // multiple classes can be added at once
 // in javascript we used document.querySelector("p").classList.add("style2", "style3");
 $("#p1").addClass("style1 style2"); //here just use space to separate multiple classes
+// removing a class from the paragraph
+// in javascript we used document.querySelector("p").classList.remove("style1");
+$("#p1").removeClass("style2");
+// toggling a class from the paragraph
+// in javascript we used document.querySelector("p").classList.toggle("style3");
+$("#p1").toggleClass("style2");
+// checking if a class is present in the paragraph
+// in javascript we used document.querySelector("p").classList.contains("style1");
+let hasClass = $("#p1").hasClass("style1");
+console.log("Does paragraph have class 'style1'? " + hasClass);
