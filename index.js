@@ -100,7 +100,23 @@ for (let i = 0; i < totalButtons; i++) {
 //   $("h1").text("You clicked " + value);
 // });
 
-$(".myButton").on("mouseover", function () {
-  let value = this.innerHTML;
-  $("h1").text("You clicked " + value);
+// $(".myButton").on("mouseover", function () {
+//   let value = this.innerHTML;
+//   $("h1").text("You clicked " + value);
+// });
+
+//login form validation by jQuery
+
+$("#loginBtn").click(function () {
+  let password1 = $("#pass1").val();
+  let password2 = $("#pass2").val();
+  if (password1 != "" && password2 != "") {
+    if (password1 === password2) {
+      alert("You logged in successfully.");
+    } else {
+      alert("Passwords do not match! Please try again.");
+    }
+  } else {
+    alert("Please fill both the password fields.");
+  }
 });
